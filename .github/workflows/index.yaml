@@ -6,8 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install
-        run: wget -qO- https://github.com/thedodd/trunk/releases/download/v0.13.1/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xzf-
-      - run: wasm-pack build --target web --out-name wasm --out-dir ./public
+        run: wget -qO- https://github.com/thedodd/trunk/releases/download/v0.13.1/trunktr-x86_64-unknown-linux-gnu.tar.gz | tar -xzf-
+      - run: trunk build
       - name: deploy to Firebase Hosting
         uses: w9jds/firebase-action@master
         with:
