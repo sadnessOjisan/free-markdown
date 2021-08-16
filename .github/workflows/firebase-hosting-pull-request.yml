@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Setup Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          target: wasm32-unknown-unknown
       - name: Install
         run:
           wget -qO- https://github.com/thedodd/trunk/releases/download/v0.13.1/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xzf- &&
