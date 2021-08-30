@@ -7,3 +7,9 @@ free and secure mark down editor
 ```
 trunk serve
 ```
+
+## prd
+
+```
+trunk build
+```
