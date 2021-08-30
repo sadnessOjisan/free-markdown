@@ -18,7 +18,7 @@ impl Component for Model {
 
     fn create(_props: Self::Properties, link: ComponentLink<Self>) -> Self {
         Self {
-            input_value: "".into(),
+            input_value: "## Please Write Your MarkdEown!!".into(),
             link,
         }
     }
